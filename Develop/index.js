@@ -23,10 +23,32 @@ let questions = [
     }
 ]
 
-function writeToFile(fileName, data) {
- 
+function init() {
+    inquirer
+    .prompt(questions)
+    .then(function ({username, color}) {
+        const queryUrl = `https://api.github.com/users/${username}`; 
+
+        axios
+            .get(queryUrl)
+            .then((res) => {    
+
+                switch(color) {
+                    case 'green':
+                        data.color = 0;
+                        break;
+                    case 'blue':
+                        data.color = 1;
+                        break;  
+                    case 'pink':
+                        data.color = 2;
+                        break;
+                    case 'red':
+                        data.color = 3;
+                        break;
+                }          
+            })
+    })
 }
 
-function init() {
-}
 init();
