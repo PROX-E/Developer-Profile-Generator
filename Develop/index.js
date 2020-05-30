@@ -59,6 +59,22 @@ function init() {
                 data.company = res.data.company
                 data.bio = res.data.bio
 
+                axios // Requires a different axios call to get stars
+                    .get(`https://api.github.com/users/${username}/repos?per_page=100`)
+                    .then((res) => {
+                       
+                        data.stars = 0;
+                        for (let i = 0; i < res.data.length; i++) { // Loop through each repository and count the number of stars
+                            data.stars += res.data[i].stargazers_count;
+                        }
+                        
+
+                        let resumeHTML = generateHTML(data);
+                       
+
+                    
+                    })
+
                 
 
 
