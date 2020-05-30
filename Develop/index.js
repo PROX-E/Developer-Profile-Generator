@@ -148,6 +148,38 @@ const colors = [
            background-color: ${colors[data.color].wrapperBackground};
            padding-top: 100px;
            }
+           body {
+           background-color: white;
+           -webkit-print-color-adjust: exact !important;
+           font-family: 'Cabin', sans-serif;
+           }
+           main {
+           background-color: #E9EDEE;
+           height: auto;
+           padding-top: 30px;
+           }
+           h1, h2, h3, h4, h5, h6 {
+           font-family: 'BioRhyme', serif;
+           margin: 0;
+           }
+           h1 {
+           font-size: 3em;
+           }
+           h2 {
+           font-size: 2.5em;
+           }
+           h3 {
+           font-size: 2em;
+           }
+           h4 {
+           font-size: 1.5em;
+           }
+           h5 {
+           font-size: 1.3em;
+           }
+           h6 {
+           font-size: 1.2em;
+           }
            
   </body>
         `
