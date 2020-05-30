@@ -209,7 +209,37 @@ const colors = [
            .photo-header h1 {
            margin-top: 10px;
            }
-           
+           .links-nav {
+           width: 100%;
+           text-align: center;
+           padding: 20px 0;
+           font-size: 1.1em;
+           }
+           .nav-link {
+           display: inline-block;
+           margin: 5px 10px;
+           }
+           .workExp-date {
+           font-style: italic;
+           font-size: .7em;
+           text-align: right;
+           margin-top: 10px;
+           }
+           .container {
+             position: relative;
+           padding: 50px;
+           padding-left: 100px;
+           padding-right: 100px;
+           }
+  
+           .row {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-between;
+             margin-top: 20px;
+             margin-bottom: 20px;
+           }
+  
   </body>
         `
           };
