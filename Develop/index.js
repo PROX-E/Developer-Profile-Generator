@@ -280,6 +280,21 @@ const colors = [
                 <a class="nav-link" href="${data.blog}">blog</a>
               </div>
   
+            </div>
+          </header>
+  
+          <div class="container">
+            <div class="row">
+            <div class="col">
+                <h4>${data.bio}</h4>
+            </div>
+            </div>
+            <div class="row">
+              <div class='col card'>
+                <h2>Public repositories: </h1>
+                ${data.numOfRepo}
+              </div>
+  
   </body>
         `
           };
