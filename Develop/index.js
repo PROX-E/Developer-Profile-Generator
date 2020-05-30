@@ -47,6 +47,23 @@ function init() {
                         data.color = 3;
                         break;
                 }          
+
+                data.username = username;
+                data.numOfRepo = res.data.public_repos;
+                data.name = res.data.name
+                data.followers = res.data.followers;
+                data.following = res.data.following;
+                data.portPic = res.data.avatar_url;
+                data.location = res.data.location;
+                data.blog = res.data.blog; 
+                data.company = res.data.company
+                data.bio = res.data.bio
+
+                
+
+
+               
+
             })
     })
 }
