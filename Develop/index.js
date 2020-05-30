@@ -127,7 +127,28 @@ const colors = [
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
         <link href="https://fonts.googleapis.com/css?family=BioRhyme|Cabin&display=swap" rel="stylesheet">
         <title>Resume</title>
-        
+        <style>
+            @page {
+              margin: 0;
+            }
+           *,
+           *::after,
+           *::before {
+           box-sizing: border-box;
+           }
+           html, body {
+           padding: 0;
+           margin: 0;
+           }
+           html, body, .wrapper {
+           height: 100%;
+           }
+           .wrapper {
+             height: 500px;
+           background-color: ${colors[data.color].wrapperBackground};
+           padding-top: 100px;
+           }
+           
   </body>
         `
           };
