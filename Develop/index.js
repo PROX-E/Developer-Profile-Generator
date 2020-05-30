@@ -180,6 +180,35 @@ const colors = [
            h6 {
            font-size: 1.2em;
            }
+           .photo-header {
+           position: relative;
+           margin: 0 auto;
+           margin-bottom: -50px;
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+           background-color: ${colors[data.color].headerBackground};
+           color: ${colors[data.color].headerColor};
+           padding: 10px;
+           width: 95%;
+           border-radius: 6px;
+           }
+           .photo-header img {
+           width: 250px;
+           height: 250px;
+           border-radius: 50%;
+           object-fit: cover;
+           margin-top: -75px;
+           border: 6px solid ${colors[data.color].photoBorderColor};
+           box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
+           }
+           .photo-header h1, .photo-header h2 {
+           width: 100%;
+           text-align: center;
+           }
+           .photo-header h1 {
+           margin-top: 10px;
+           }
            
   </body>
         `
