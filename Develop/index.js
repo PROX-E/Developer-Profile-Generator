@@ -72,7 +72,16 @@ function init() {
                         let resumeHTML = generateHTML(data);
                        
 
-                    
+                        conversion({ html: resumeHTML }, function(err, result) {
+                            if (err) {
+                              return console.error(err);
+                            }
+                           
+                            console.log(result.numberOfPages);
+                            console.log(result.logs);
+                            result.stream.pipe(fs.createWriteStream('./resume.pdf'));
+                            conversion.kill();
+                          });
                     })
 
                 
