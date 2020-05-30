@@ -295,6 +295,24 @@ const colors = [
                 ${data.numOfRepo}
               </div>
   
+              <div class="col card">
+                <h2>Followers:</h1>
+                ${data.followers}
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="card col">
+                <h2>Stars:</h2>
+                ${data.stars}
+              </div>
+              <div class="card col">
+                <h2>Following:</h2>
+                ${data.followers}
+              </div>
+            </div>
+  
+          </div>
   </body>
         `
           };
