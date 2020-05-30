@@ -240,6 +240,33 @@ const colors = [
              margin-bottom: 20px;
            }
   
+           .card {
+             padding: 20px;
+             border-radius: 6px;
+             background-color: ${colors[data.color].headerBackground};
+             color: ${colors[data.color].headerColor};
+             margin: 20px;
+           }
+           
+           .col {
+           flex: 1;
+           text-align: center;
+           }
+  
+           a, a:hover {
+           text-decoration: none;
+           color: inherit;
+           font-weight: bold;
+           }
+  
+           @media print { 
+            body { 
+              zoom: .75; 
+            } 
+           }
+        </style>
+  
+  
   </body>
         `
           };
