@@ -1,7 +1,7 @@
 {
   "name": "dev_prof_gen",
   "version": "1.0.0",
-  "description": "Creates a Developer profile based on information from a pdf document",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
