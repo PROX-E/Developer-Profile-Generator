@@ -181,7 +181,6 @@ function generateHTML(data) {
             <div class="links-nav">
               <a class="nav-link">${data.location}</a>
               <a class="nav-link" href="https://github.com/${data.username}">github</a>
-              <a class="nav-link" href="${data.blog}>blog</a>
             </div>
 
           </div>
